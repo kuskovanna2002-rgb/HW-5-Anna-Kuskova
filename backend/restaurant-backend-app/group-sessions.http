@@ -1,0 +1,8 @@
+@baseUrl = https://x0xtexh1w5.execute-api.us-west-2.amazonaws.com/develop
+@groupReservationId = REPLACE_WITH_GROUP_RESERVATION_ID
+@idToken = REPLACE_WITH_OWNER_ID_TOKEN
+
+### Get all participant sessions for a group reservation
+GET {{baseUrl}}/guest/groups/{{groupReservationId}}/sessions
+Authorization: {{idToken}}
+Accept: application/json
